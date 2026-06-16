@@ -3,65 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florin - Budget Smarter</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
 </head>
 <body>
 
-    <header>
-        <h1>Florin</h1>
-        <p class="tagline">Your AI-powered path to better budgeting.</p>
-    </header>
+    <!-- Zigpoll Survey Embed -->
+    <script type="application/javascript">
+        (function () {
+            window.Zigpoll = window.Zigpoll || {};
+            window.Zigpoll.accountId = '6a319509f911ba8324e641ea';
 
-    <main>
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.charset = "utf-8";
+            script.src = "//cdn.zigpoll.com/static/js/main.js";
+            script.async = true;
 
-        <section class="hero">
-                 <script type='application/javascript'>
-  ;(function () {
-    window.Zigpoll = window.Zigpoll || {};
-    window.Zigpoll.accountId = '6a319509f911ba8324e641ea';
+            document.head.appendChild(script);
+        }());
+    </script>
 
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.charset = "utf-8";
-    script.src = "//cdn.zigpoll.com/static/js/main.js";
-    script.async = true;
-
-    document.head.appendChild(script);
-  }());
-</script>
-            <h2>Spend What You Can Afford</h2>
-            <p>
-                Florin automatically transfers your Weekly spending budget
-                onto a dedicated debit card so you can stay on track without
-                tracking every transaction.
-            </p>
-
-            <button id="waitlist-btn">Join the Waitlist</button>
-        </section>
-
-        <section class="features">
-            <div class="feature">
-                <h3>AI Budgeting</h3>
-                <p>Uses your spending history to create a realistic monthly budget.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Dedicated Card</h3>
-                <p>Your budget is loaded onto a separate card each month.</p>
-            </div>
-
-            <div class="feature">
-                <h3>No Spreadsheets</h3>
-                <p>Stay within budget without manually categorizing expenses.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Florin</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
