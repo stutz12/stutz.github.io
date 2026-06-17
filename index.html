@@ -1,23 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Zigpoll Test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgeting Survey</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #111827;
+        }
+
+        p {
+            margin: 0 0 24px 0;
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        #zigpoll-embed-6a31951bf911ba8324e641fd {
+            margin-top: 20px;
+        }
+
+        .loading {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>If you can see this text, the HTML is loading.</h1>
+    <div class="container">
+        <h1>Thank you for taking the time to complete this survey</h1>
+        <p>Your responses help us improve the budgeting experience. It should only take a few minutes.</p>
 
-<div id="zigpoll-embed-6a31951bf911ba8324e641fd"></div>
+        <div id="zigpoll-embed-6a31951bf911ba8324e641fd"></div>
+        <div class="loading">Loading survey…</div>
+    </div>
 
-<script>
-    console.log("Script block running");
+    <script>
+        console.log("Script block running");
 
-    window.Zigpoll = window.Zigpoll || {};
-    window.Zigpoll.accountId = "6a319509f911ba8324e641ea";
-    window.Zigpoll.pollId = "6a31951bf911ba8324e641fd";
-</script>
+        window.Zigpoll = window.Zigpoll || {};
+        window.Zigpoll.accountId = "6a319509f911ba8324e641ea";
+        window.Zigpoll.pollId = "6a31951bf911ba8324e641fd";
+    </script>
 
-<script src="https://cdn.zigpoll.com/static/js/main.js"></script>
+    <script src="https://cdn.zigpoll.com/static/js/main.js"></script>
 
 </body>
 </html>
