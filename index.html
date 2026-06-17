@@ -4,22 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        #zigpoll-embed-6a31951bf911ba8324e641fd {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+    </style>
 </head>
 <body>
-<div id="zigpoll-embed-6a31951bf911ba8324e641fd"></div>
-<script type="application/javascript">
-  ;(function () {
-    window.Zigpoll = window.Zigpoll || {};
-    window.Zigpoll.accountId = '6a319509f911ba8324e641ea';
-    window.Zigpoll.pollId = '6a31951bf911ba8324e641fd';
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.charset = "utf-8";
-    script.src = "//cdn.zigpoll.com/static/js/main.js";
-    script.async = true;
-    document.head.appendChild(script);
-  }());
-</script>
+
+    <div id="zigpoll-embed-6a31951bf911ba8324e641fd"></div>
+
+    <script>
+        (function () {
+            window.Zigpoll = window.Zigpoll || {};
+            window.Zigpoll.accountId = "6a319509f911ba8324e641ea";
+            window.Zigpoll.pollId = "6a31951bf911ba8324e641fd";
+
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.charset = "utf-8";
+            script.src = "https://cdn.zigpoll.com/static/js/main.js";
+            script.async = true;
+
+            document.head.appendChild(script);
+        })();
+    </script>
 
 </body>
 </html>
